@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panasonic Lumix DMC-GH5 Kit 12-35mm f/2.8 IS ASPH.</title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="animate.min.css"/>
+    <link rel="stylesheet" href="splitting.css"/>
+    <link rel="stylesheet" href="splitting-cells.css"/>
+    <link href='style.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container-fluid">
+    <div>
+        <!-- HEADER -->
+        <div style="background-color: green; height:50px"></div>
+
+        <!-- TITLE SECTION -->
+        <div id="title" class="product-title fixed p-1">
+            <p class="text-muted mb-0">Автомобиль</p>
+            <h1 class="h5 mb-0"> HONDA CIVIC </h1>
+            <div class="d-flex flex-row text-muted fw-lighter">
+                <div class="pe-3"> <span class="d-none d-md-inline fs-6" >Код товара: </span># 3253455 </div>
+                <div class="pe-3"> ★★★★☆ </div>
+                <div class=""> <span class="d-none d-md-inline"> Заказов: </span><span class="d-inline d-md-none"> $$ </span> 45  </div>
+            </div>
+        </div>
+
+        <!-- PHOTO -->
+        <div id="photos" class="row">
+            <div
+                data-scroll 
+                callback="changePhotos" 
+                animation="fastflip" 
+                frames="51" 
+                fps="10" 
+                location="img/" 
+                format="png"
+                class="col-12 col-md-8"
+            >
+                <div class="d-flex text-danger justify-content-center preloader mt-5">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Загружаю фотографии...</span>
+                  </div>
+                </div>
+                <canvas class="d-none">
+                    <!-- NO BROWSER SUPPORT -->
+                    <img src="img/1.png">
+                </canvas>
+            </div>
+
+            <div class="col-12 col-md-4">
+            </div>
+
+            <div class="blanket"></div>
+        </div>
+
+        <!-- SPECS -->
+        <div id="specs" class="row" >
+            <div data-scroll 
+                data-height="500"
+                class="vstack gap-1 p-4 col-12 col-md-8"
+                data-splitting="items"
+                data-bypass="60"
+                callback="animateText"
+                data-show-classes="animate__animated animate__fadeInLeftBig"
+                data-hide-classes="animate__animated animate__fadeOutRightBig"
+            >
+                <div class="h5 invisible mb-3"> Краткие характеристики: </div>
+                <div class="invisible"> Хороший фотоаппарат </div>
+                <div class="invisible"> Очень быстро фокусируется </div>
+                <div class="invisible"> Классно фотографирует </div>
+                <div class="invisible"> Дороговат, но это ничего </div>
+                <div class="invisible"> Один из лучших фотиков от Canon </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+            </div>
+
+            <div class="blanket"></div>
+        </div>
+
+        <!-- INBOX -->
+        <div id="inbox" class="row" >
+            <div data-scroll 
+                class="vstack gap-1 p-4 col-12 col-md-8"
+                data-splitting="items"
+                data-bypass="50"
+                callback="animateText"
+                data-show-classes="animate__animated animate__fadeInLeftBig"
+                data-hide-classes="animate__animated animate__fadeOutRightBig"
+            >
+
+                <div class="h5 invisible mb-3"> Комплектация </div>
+                <div class="invisible"> Камера Canon </div>
+                <div class="invisible"> Объектив (какой-никакой) </div>
+                <div class="invisible"> Передняя крышка объектива </div>
+                <div class="invisible"> Бленда </div>
+                <div class="invisible"> Чехол </div>
+                <div class="invisible"> Аккумулятор </div>
+                <div class="invisible"> Зарядное устройство </div>
+                <div class="invisible"> Карта памяти </div>
+                <div class="invisible"> Гарантийный талон </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+            </div>
+
+            <div class="blanket"></div>
+        </div>
+
+        <!-- MANUAL -->
+        <div style="background-color: green; height:50vh"></div>
+
+        <!-- REVIEWS & QUESTIONS -->
+
+        <!-- FAQ -->
+        <div style="background-color: yellow; height:50vh"></div>
+    </div>
+
+    <!-- BUY SECTION -->
+    <div id="buy-btn" class="buy-section fixed p-3">
+        <div class="d-flex justify-content-between ps-1 pe-1">
+            <p class="text-danger mb-0"> Под заказ, 14 дней </p>
+            <div class="btn-group dropup variants">
+                <button type="button" class="btn btn-outline-danger btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Варианты
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Body</a></li>
+                    <li><a class="dropdown-item" href="#">Body (в коробке от kit)</a></li>
+                    <li><a class="dropdown-item" href="#">Kit 14-150mm</a></li>
+                    <li><a class="dropdown-item" href="#">Kit 12-35mm f/2.8</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-danger btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><div class="row"> <div class="col"> 149 493 ₽ </div> | <div class="col"> КУПИТЬ </div> </div></button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="background-color: green; height:50vh"></div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Заказ # 4889</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+
+<div style="background-color: green; height:1000px"></div>
+<script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="image.loader.js"></script>
+<script type="text/javascript" src="animation.dispatcher.js"></script>
+<script type="text/javascript" src="animation.callbacks.js"></script>
+<script type="text/javascript" src="splitting.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
